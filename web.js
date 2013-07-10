@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
   var data = new Buffer(1024);
   fs.readFile('index.html',data);
   response.send(data.toString());
-});
+);
 
 var port = process.env.PORT || 5000;
 
